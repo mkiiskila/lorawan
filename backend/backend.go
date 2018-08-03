@@ -274,6 +274,8 @@ type JoinReqPayload struct {
 	DLSettings lorawan.DLSettings `json:"DLSettings"`
 	RxDelay    int                `json:"RxDelay"`
 	CFList     HEXBytes           `json:"CFList,omitempty"` // Optional
+	RSSI       int                `json:"RSSI,omitempty"` // Optional
+	LoRaSNR    float64            `json:"LoRaSNR,omitempty"` // Optional
 }
 
 // JoinAnsPayload defines the JoinAns message payload.
